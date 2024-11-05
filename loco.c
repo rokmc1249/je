@@ -46,6 +46,10 @@ float float_division_zero(float x) {
     return result;
 
 }
+void leak() {
+    int* p = malloc(4);
+
+}
 
 int lang_struct_mrs(int j) {
     if (j == 1) return 2;
