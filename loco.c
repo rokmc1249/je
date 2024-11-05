@@ -50,7 +50,15 @@ void leak() {
     int* p = malloc(4);
 
 }
-
+void df() {
+    int* p = malloc(4);
+    if (p == NULL) {
+        return;
+    }
+    *p = 13;
+    free(p);
+    free(p);
+}
 int lang_struct_mrs(int j) {
     if (j == 1) return 2;
     else if (j == 2) return 1;
