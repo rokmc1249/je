@@ -85,9 +85,8 @@ int main() {
     p -= 2;
     p = NULL; 
     free(p);
-    int var = 2;
-    int result = var / 0;
-    printf("% d\n", result);
+   
+    
     float a = 5.0;
     
     
