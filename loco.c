@@ -92,7 +92,7 @@ int main() {
     
     
    
-    float result =  float_division_zero(a);
+    //float result =  float_division_zero(a);
 
     return 0;
 }
