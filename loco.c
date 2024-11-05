@@ -39,13 +39,13 @@
 
 
  
-float float_division_zero(float x) {
-   
-    float y = (x * x) - 20.0;
-    float result = 5.0 / (y-y);
-    return result;
-
-}
+//float float_division_zero(float x) {
+//   
+//    float y = (x * x) - 20.0;
+//    float result = 5.0 / (y-y);
+//    return result;
+//
+//}
 void leak() {
     int* p = malloc(4);
 
@@ -85,9 +85,9 @@ int main() {
     p -= 2;
     p = NULL; 
     free(p);
-    /*int var = 2;
-    int result = var / 0;*/
-    //printf("% d\n", result);
+    int var = 2;
+    int result = var / 0;
+    printf("% d\n", result);
     float a = 5.0;
     
     
